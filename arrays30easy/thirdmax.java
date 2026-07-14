@@ -31,7 +31,12 @@ public class thirdmax {
             }
 
         }
-        System.out.println(max3);
+        if(max3 == Long.MIN_VALUE){
+            System.out.println(max1);
+        }
+        else{
+            System.out.println(max3);
+        }
 
     }
     
