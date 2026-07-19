@@ -1,23 +1,27 @@
-import java.util.Arrays;
 import java.util.Scanner;
-public class runningsumof1darray {
+public class findevenumberofdigits {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter size of array");
         int size = sc.nextInt();
         int arr[] = new int[size];
-        System.out.println("Enter values");
+        System.out.println("Enter values of array");
         for(int i=0; i<arr.length; i++){
             arr[i] = sc.nextInt();
         }
-        int sum = 0;
-        for(int i=0; i<arr.length-1; i++){
-            arr[i+1] = arr[i] +arr[i+1];
-
+        int d=0;
+        int c=0;
+        int f=0;
+        for(int i=0; i<arr.length; i++){
+            d=d/10;
+            c++;
+            if(c%2==0){
+                f++;
+            }
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(f);
+
 
     }
-
     
 }
