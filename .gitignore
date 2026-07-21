@@ -1,3 +1,7 @@
 /.DS_Store
 /arraysrevision*.class
 *.class
+arraysrevision/
+*.class
+.DS_Store
+.vscode/
